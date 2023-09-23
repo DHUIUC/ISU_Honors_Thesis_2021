@@ -1,0 +1,26 @@
+
+
+body {
+  background-color: lightblue;
+
+}
+
+ul{
+	padding-bottom: 10px;
+}
+
+.checkbox-grid li {
+  display: table-cell;
+  float: left;
+  width: 25%;
+}
+
+#Improvement label{
+	padding-left:15px;
+}
+
+button{
+	width: 10%;
+	height: 100%;
+	font-size: 18px;
+}

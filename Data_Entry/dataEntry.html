@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>General Patient Information</title>
+	<link rel="stylesheet" href="css/stylesE1.css">
+</head>
+
+<body>
+  
+	<script src="formFill.js"></script>
+	
+	<h1>General Patient Information</h1>
+  
+	<h3>Degenerative Disc Identified?</h3>
+	<div id="degenDisc">
+		<input type="radio" name="radAnswer6" value="Yes" id="radYes6"><label for="radYes6">Yes</label>
+		<input type="radio" name="radAnswer6" value="No" id="radNo6"><label for="radNo6">No</label>
+	</div>
+  
+	<h3>Sex:</h3>
+	<div id="sex">
+		<input type="radio" name="sexVal" value="Male" id="Male"><label for="Male">Male</label>
+		<input type="radio" name="sexVal" value="Female" id="Female"><label for="Female">Female</label>
+	</div>
+	
+	<!--NUMERICAL INPUT-->
+	
+	<h3>Age:</h3>
+	<div id="ageWrapper">
+		<input type="number" id="age" name="age" min="1" max="120">
+	</div>
+	
+	<br><br>
+	
+	<h3>Have you been in an accident that caused an injury?</h3>
+	<div id="radiobuttons">
+		<input type="radio" name="radAnswer" value="Yes" id="radYes"><label for="radYes">Yes</label>
+		<input type="radio" name="radAnswer" value="No" id="radNo"><label for="radNo">No</label>
+	</div>
+	
+	
+	<h3>Accident Type:</h3>
+	<div id="accidentType">
+		<input type="radio" name="accVal" value="Auto" id="Auto"><label for="Auto">Auto</label>
+		<input type="radio" name="accVal" value="Work" id="Work"><label for="Work">Work</label>
+		<input type="radio" name="accVal" value="Home" id="Home"><label for="Home">Home</label>
+		<input type="radio" name="accVal" value="Other" id="Other"><label for="Other">Other</label>
+	</div>
+	
+	<br><br>
+	
+	<h3>Reason for Concern:</h3>
+	<div id="reasonWrapper">
+		<input type="text" id="reason" name="reason" size="60">
+	</div>
+	
+	<h3>When did symptoms first occur?:</h3>
+	<div id="symptomDateWrapper">
+		<input type="text" id="symptomDate" name="symptomDate" size="60">
+	</div>
+	
+	<h3>Has your condition been getting better?</h3>
+	<div id="radiobuttons2">
+		<input type="radio" name="radAnswer2" value="Yes" id="radYes2"><label for="radYes2">Yes</label>
+		<input type="radio" name="radAnswer2" value="No" id="radNo2"><label for="radNo2">No</label>
+	</div>
+	
+	<h3>On a scale of 1-10, how bad is the pain?</h3>
+	<div id="painNum">
+		<input type="number" id="painScale" name="painScale" min="1" max="10">
+	</div>
+	
+	
+	
+	<ul class="checkbox-grid">
+		<li><input type="checkbox" name="text1" id="pn1" value="Sharp" /><label for="text1">Sharp</label></li>
+		<li><input type="checkbox" name="text2" id="pn2" value="Aching" /><label for="text2">Aching</label></li>
+		<li><input type="checkbox" name="text3" id="pn3" value="Dull" /><label for="text3">Dull</label></li>
+		<li><input type="checkbox" name="text4" id="pn4" value="Numb" /><label for="text4">Numb</label></li>
+		<li><input type="checkbox" name="text5" id="pn5" value="Cramp" /><label for="text5">Cramp</label></li>
+		<li><input type="checkbox" name="text6" id="pn6" value="Burning" /><label for="text6">Burning</label></li>
+		<li><input type="checkbox" name="text7" id="pn7" value="Throbbing" /><label for="text7">Throbbing</label></li>
+		<li><input type="checkbox" name="text8" id="pn8" value="Tingling" /><label for="text8">Tingling</label></li>
+		<li><input type="checkbox" name="text9" id="pn9" value="Stiff" /><label for="text9">Stiff</label></li>
+		<li><input type="checkbox" name="text10" id="pn10" value="Swelling" /><label for="text10">Swelling</label></li>
+		<li><input type="checkbox" name="text11" id="pn11" value="Shooting" /><label for="text11">Shooting</label></li>
+		<li><input type="checkbox" name="text12" id="pn12" value="Other" /><label for="text12">Other</label></li>
+	</ul>
+	
+	<br><br>
+	
+	<h3>Is the pain constant?</h3>
+	<div id="radiobuttons3">
+		<input type="radio" name="radAnswer3" value="Yes" id="radYes3"><label for="radYes3">Yes</label>
+		<input type="radio" name="radAnswer3" value="No" id="radNo3"><label for="radNo3">No</label>
+	</div>
+	
+	<h3>Is there anything that reduces or affects the pain?</h3>	
+	<div id="Improvement">
+		<label>Better </label><input type="text" id="bettering" name="bettering">
+		<label>Worse </label><input type="text" id="worsening" name="worsening">
+	</div>
+	
+	<h3>Does the Pain move or stay in the same area?</h3>
+	<div id="radiobuttons4">
+		<input type="radio" name="radAnswer4" value="Stays" id="radYes4"><label for="radYes4">Stays</label>
+		<input type="radio" name="radAnswer4" value="Moves" id="radNo4"><label for="radNo4">Moves</label>
+	</div>
+	
+	<h3>Does the Pain interfere with:</h3>
+	<ul class="checkbox-grid">
+		<li><input type="checkbox" name="text1" id="intf1" value="Sleep" /><label for="text1">Sleep</label></li>
+		<li><input type="checkbox" name="text2" id="intf2" value="Work" /><label for="text2">Work</label></li>
+		<li><input type="checkbox" name="text3" id="intf3" value="Daily Activities" /><label for="text3">Daily Activities</label></li>
+		<li><input type="checkbox" name="text4" id="intf4" value="Other" /><label for="text4">Other</label></li>
+	</ul>
+	
+	<h3>Is it painful to:</h3>
+	<ul class="checkbox-grid">
+		<li><input type="checkbox" name="text1" id="pnt1" value="Sit" /><label for="text1">Sit</label></li>
+		<li><input type="checkbox" name="text2" id="pnt2" value="Stand" /><label for="text2">Stand</label></li>
+		<li><input type="checkbox" name="text3" id="pnt3" value="Lay Down" /><label for="text3">Lay Down</label></li>
+		<li><input type="checkbox" name="text4" id="pnt4" value="Bend" /><label for="text4">Bend</label></li>
+		<li><input type="checkbox" name="text5" id="pnt5" value="Walk" /><label for="text5">Walk</label></li>
+	</ul>
+	
+	<br><br>
+	
+	<a href="dataEntry2.html">
+		<button type="button" id="continue">Continue</button>
+	</a>
+	
+	<br><br>
+
+	
+</body>
+</html>
